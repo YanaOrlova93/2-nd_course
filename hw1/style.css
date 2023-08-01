@@ -10,6 +10,12 @@ body {
 a {
     text-decoration: none;
 }
+
+.container {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
 .top {
     height: 735px;
     background-image: url(image/main.jpg);
@@ -33,8 +39,8 @@ a {
 
 .top__text {
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 32px;
     color: #FFFFFF;
     margin-bottom: 16px;
@@ -65,14 +71,13 @@ a {
 .product-content {
     height: 100%;
     margin: 0;
-    padding-left: 120px;
-    padding-right: 120px;
+    gap: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* border-radius: 16px; */
-    background: #000;
+    background: #000915;
    
 }
 
