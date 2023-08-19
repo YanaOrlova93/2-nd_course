@@ -2,10 +2,10 @@
 //Задание 1==================================
 let password = String('Скайпро');
 let password2 = prompt ("Введите пароль");
-if (password) {
-    console.log('Пароль введен верно');
+if (password === password2) {
+    alert('Пароль введен верно');
 } else {
-    console.log('Пароль введен неправильно');
+    alert('Пароль введен неправильно');
 }
 
 //Задание 2=========================================
@@ -24,62 +24,49 @@ if (d>100 && e>100) {
     console.log('Верно');
 } else {
     console.log('Неверно');
-    
 }
 
 //Задание 4===================================
+
 let a = '2';
 let b = '3';
-let result = a + b ;
-alert (result);
+a = Number (a);
+b = Number (b);
+let o = (a+b);
+alert(o);
+
 
 //Задание 5================================
 let monthNum = String(prompt('Введите номер месяца'));
 
 switch (monthNum) {
     case '1':
-        console.log('Зима')
-        break;
     case '2':
-        console.log('Зима')
-        break;
-    case '3':
-        console.log('Весна')
-            break;
-    case '4':
-        console.log('Весна')
-            break;
-    case '5':
-            console.log('Весна')
-            break;
-    case '6':
-            console.log('Лето')
-            break;
-    case '7':
-            console.log('Лето')
-            break;
-    case '8':
-            console.log('Лето')
-            break;
-    case '9':
-            console.log('Осень')
-            break;
-    case '10':
-            console.log('Осень')
-            break;
-    case '11':
-            console.log('Осень')
-            break;    
     case '12':
-        console.log('Зима')
-        break;
-
+    console.log('Зима')
+    break;
+    case '3':
+    case '4':
+    case '5':
+    console.log('Весна');
+    break;
+    case '6':
+    case '7':  
+    case '8':
+    console.log('Лето')
+    break;
+    case '9':   
+    case '10':
+    case '11':
+    console.log('Осень')
+    break;    
     default:
         console.log('Такого месяца нет');
         break;
 }
 
 //Задание 6=========
+доп
 //Задание 7===================================
 let numb = Number(prompt('Пожалуйста, введите любое число'));
 if (isNaN(numb)) {
