@@ -26,7 +26,7 @@ const object = {
     Petya: '400',
 }
 for (let key in object) {
-    console.log('${key}: зарплата ${object[key]}долларов'); 
+    console.log(`${key}: зарплата ${object[key]}долларов`); 
     break;
     }
     
@@ -43,16 +43,6 @@ console.log(num);
 
 //задание6===============================
 
-const firstFriday = 5;
-
-for (let day = 1; day <= 31; day++) {
-    const currentDayOfWeek = (firstFriday + day - 1) % 7;
-
-    if (currentDayOfWeek === 5) {
-        console.log('Сегодня пятница. Необходимо подготовить отчет.');
-    } else {
-        console.log('Сегодня не пятница. Отчет не нужен.');
-    }
+for (let day = 6; day <= 31; day+=7) {
+    console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
-
-
