@@ -103,6 +103,9 @@ a {
   .game-3 {
     background-image: url(image/game3.jpg);
   }
+  .game__box {
+    background-color: #000915;
+  }
 
 @media (max-width: 600px) {
     .center {
