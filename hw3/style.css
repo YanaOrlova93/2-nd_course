@@ -12,80 +12,95 @@ body {
 a {
     text-decoration: none;
 }
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
 .top {
-    height: 735px;
+    height: 1024px;
     background-image: url(image/main.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1024px;
+    
 }
 
-.title {
+.header {
+    padding-top: 217px;
+    width: 788px;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 78px;
     color: #FFFFFF;
-    padding-top: 64px;
-    margin-bottom: 16px;
-    width: 792px;
+  
 
 }
 
-.top__text {
+.text {
+    padding-top: 32px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 32px;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    
 }
 
 
 .button {
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
+    width: 234px;
+    height: 49px;
     font-weight: 400;
-    line-height: normal;
-    background: rgba 222, 215, 215, 0.41;
-    border: 1px solid #9C0332;
-    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
     border-radius: 30px;
-    background: #9C0332;
-    width: 275px;
-    height: 46px;
-    font-size: 15px;
-    line-height: 18px;
-    
+    background: #9c0332;
+    box-sizing: border-box;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    text-decoration: none ;
 }
 
-
-
-.product-content {
-    height: 100%;
-    margin: 0;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* border-radius: 16px; */
-    background: #000;
-   
-}
-
-
-.product__img {
-    margin-top: 128px;
-    margin-bottom: 128px;
-    width: 379px;
+.games {
+    padding-top: 128px;
+    height: 556px;
+    background-color: #000915;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .game {
     height: 300px;
-    border-radius: 16px;
-    
-    
+    grid-column: span 4;
+    border-radius: 17px;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .game__name {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  
+  .game-1 {
+    background-image: url(image/game1.jpg);
+  }
+  .game-2 {
+    background-image: url(image/game2.jpg);
+  }
+  .game-3 {
+    background-image: url(image/game3.jpg);
+  }
 
-}
