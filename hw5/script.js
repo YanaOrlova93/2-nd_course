@@ -1,49 +1,47 @@
 
 //Задание 1=========================
-function minNum() {
-    let num1 = 0;
-    let num2 = 0;
-    if (num1<num2) {
-        alert(num1);
-    }   else if (num2<num1){
-            alert (num2)
-        }
-        else if (num2=num1){
-            alert(num1)
+function minNum(q,w) {
+    if (q<w) {
+        alert(q);
+    }   else if (w<q) {
+            alert (w);
         }
     }
+    minNum (5,4);
 
 //Задание 2=========================
-function name(params) {
-    let num3 = 3;
-    if (num3%2==0) {
+function nameNum(e) {
+    if (e%2==0) {
         alert('Число четное');
     }
     else {
         alert('Число нечетное')
     }
 }
+nameNum (6);
 
 //Задание 3=========================
 function printSquare(num4) {
     let square = num4 ** 2;
     console.log(square);
 }
-printSquare();
+printSquare(5); 
 
-function calcSquare (num4) {
-   return num4 ** 2;
+function calcSquare (num5) {
+    return num5 * num5;
 }
-calcSquare();
+console.log(calcSquare(36));
+
+
 
 
 //Задание 4=======================
 function askAge() {
     const userAge = Number(prompt('Сколько вам лет?'));
-    if (userAge = 0 && userAge<=12) {
+    if (userAge >= 0 && userAge <= 12) {
         alert ('Привет,друг!');
     }
-    else if (userYears >=13) {
+    else if (userAge >= 13) {
         alert ('Добро пожаловать!');
     }
     else {
@@ -53,15 +51,14 @@ function askAge() {
 askAge();
 
 //Задание 5===========================
-function mult(a, b) {
-    let c = prompt('Введите число');
-    if (isNaN (Number(c)) || c === ' ' || c === null || c==='') {
-        return('Одно или оба значения не являются числом');
-    } else {
-    return c = (a*b);     
+function multNum(a, b) {
+   if (!isNaN(a) && !isNaN(b)) {
+    return a*b;
+   } else if (isNaN(a) || isNaN(b)) {
+    console.log('Одно или оба значения не являются числом.');
+   }
 }
-}
-alert(mult(2,3));
+   multNum ('r',5);
 
 //Задание 6==========================
 
@@ -99,7 +96,6 @@ function getCirclePerimetr() {
     getPerimeter: getCirclePerimetr,
  };   
  console.log(circle1.getArea());
- console.log(circle1.getPerimetr());
+ console.log(circle1.getPerimeter());
  console.log(circle2.getArea());
- console.log(circle2.getPerimetr());
-       
+ console.log(circle2.getPerimeter());
