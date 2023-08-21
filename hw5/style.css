@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+.top {
+    height: 1024px;
+    background-image: url(image/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header {
+    padding-top: 217px;
+    width: 788px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+  
+
+}
+
+.text {
+    padding-top: 32px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    
+}
+
+
+.button {
+    width: 234px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background: #9c0332;
+    box-sizing: border-box;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    text-decoration: none ;
+}
+
+.games {
+    padding-top: 128px;
+    height: 556px;
+    background-color: #000915;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .game {
+    height: 300px;
+    grid-column: span 4;
+    border-radius: 17px;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .game__name {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  
+  .game-1 {
+    background-image: url(image/game1.jpg);
+  }
+  .game-2 {
+    background-image: url(image/game2.jpg);
+  }
+  .game-3 {
+    background-image: url(image/game3.jpg);
+  }
+
+@media (max-width: 600px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top {
+        height: 735px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-position: center;
+    
+    }
+    .header {
+        padding-top: 238px;
+        font-size: 32px;
+        top: center;
+    }
+    .text {
+        font-size: 14px;
+        text-align: center;
+        line-height: 22px;
+        margin-bottom: 32px;
+    }
+    .games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
