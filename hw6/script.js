@@ -60,9 +60,12 @@ let product7 = [9, 8, 7, 6, 5];
 //Задание 8
 
 let product8 = ['a', 'b', 'c', 'd', 'e', 'f'];
-console.log(product8.reverse);
 
-    
+for(let a = product8.length - 1; a >= 0; a--) {
+    product8[a] = product8[a];
+    console.log(product8[a]);
+}
+
 
 //Задание 9
 
@@ -70,14 +73,18 @@ let product9 = [
     [1, 2, 3],
     [4, 5, 6],
 ];
-let arrayResult = [product9.length]
-for (let i=0; i<=product9.length; i++) {
-    for (let y=0; y<=product9[i].length; y++)
-    product9[i][y]=arrayResult.unshift;
+let arrayResult = product9.reduce((firstArray, secondArray) => firstArray.concat(secondArray), []);
 console.log(arrayResult);
-}
+
 
 //Задание 10
+let product10 = [2, 5, 7, 9];
+for (let q = 0; q<product10.length) {
+
+}
+
+
+
 //Задание 11
 //Задание 12
 
