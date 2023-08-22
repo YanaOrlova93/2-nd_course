@@ -90,4 +90,10 @@ console.log(sum);
 
 
 //Задание 11
+function taskEleven(array) {
+ return array.map(number => number*number); 
+    }
+ let array1 = [4, 5, 6];
+ taskEleven (array1);   
+
 //Задание 12
