@@ -78,14 +78,16 @@ console.log(arrayResult);
 
 
 //Задание 10
+
 let product10 = [2, 5, 7, 9];
-for (let q = 0; q<product10.length) {
-
+let sum = 0;
+for (let q = 0; q<product10.length-1; q++) {
+let acElement = product10[q];
+let nextElement = product10[q+1];
+sum = acElement + nextElement;
+console.log(sum);
 }
-
 
 
 //Задание 11
 //Задание 12
-
-
