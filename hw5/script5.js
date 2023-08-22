@@ -1,15 +1,19 @@
 
-function Season() {
-    let month = Number(prompt('Номер месяца'));
-    if (month >=3 && month <=5) {
-        return alert('Весна');
-    } else if (month >=6 && month <=8) {
-        return alert('Лето');
-       } else  if (month >=9 && month <=11) {
-            return alert('Осень');
-          } else   if (month >=12 && month <=2) {
-                return alert('Зима');
-          } else {
-            return alert('Такого месяца не существует');
-          }
+let month = Number(prompt('Номер месяца'));
+switch (month) {
+  case 'month >=3 && month <=5':
+    console.log('Весна');
+    break;
+    case 'month >=6 && month <=8':
+      console.log('Лето');
+      break;
+      case 'month >=9 && month <=11':
+      console.log('Осень');
+      break;
+      case 'month >=12 && month <=2':
+      console.log('Зима');
+      break;
+
+  default:
+    break;
 }

@@ -54,7 +54,7 @@ askAge();
 function multNum(a, b) {
    if (!isNaN(a) && !isNaN(b)) {
     return a*b;
-   } else if (isNaN(a) || isNaN(b)) {
+   } else (isNaN(a) || isNaN(b)) {
     console.log('Одно или оба значения не являются числом.');
    }
 }
