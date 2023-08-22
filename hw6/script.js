@@ -45,6 +45,7 @@ const product6 = [9, 8, 7, 'a', 6, 5];
 product6.sort();
 console.log(product6);
 
+
 //Задание 7
 
 let product7 = [9, 8, 7, 6, 5];
@@ -55,13 +56,27 @@ let product7 = [9, 8, 7, 6, 5];
             alert('Не угадал');
     }
         
+
 //Задание 8
 
-const product8 = ['a', 'b', 'c', 'd', 'e', 'f'];
+let product8 = ['a', 'b', 'c', 'd', 'e', 'f'];
+console.log(product8.reverse);
 
-product8.reverse();    
-console.log( reverse );
+    
+
 //Задание 9
+
+let product9 = [
+    [1, 2, 3],
+    [4, 5, 6],
+];
+let arrayResult = [product9.length]
+for (let i=0; i<=product9.length; i++) {
+    for (let y=0; y<=product9[i].length; y++)
+    product9[i][y]=arrayResult.unshift;
+console.log(arrayResult);
+}
+
 //Задание 10
 //Задание 11
 //Задание 12
