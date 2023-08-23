@@ -57,7 +57,13 @@ padding-top: 32px;
 
     
 }
-
+.link {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.link:hover {
+  color: #b71717;
+}
 
 .button {
     width: 234px;
