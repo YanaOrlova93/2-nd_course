@@ -28,31 +28,31 @@ a {
 }
 
 .header {
-  display: flex;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-padding-top: 217px;
-color: #FFF;
-font-family: Montserrat;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-top: 217px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+      
 
 }
 
 .text {
   padding-top: 32px;
-margin-bottom: 44px;
+  margin-bottom: 44px;
   width: 481px;
   color: #FFF;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 300;
-line-height: 32px; /* 177.778% */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
 
 
 
