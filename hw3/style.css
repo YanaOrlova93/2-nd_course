@@ -28,24 +28,33 @@ a {
 }
 
 .header {
-    padding-top: 217px;
-    width: 788px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    color: #FFFFFF;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+padding-top: 217px;
+color: #FFF;
+font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
   
 
 }
 
 .text {
-    padding-top: 32px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
+  width: 481px;
+  color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px; /* 177.778% */
+
+padding-top: 32px;
+
+
     
 }
 
@@ -53,9 +62,11 @@ a {
 .button {
     width: 234px;
     height: 49px;
+    flex-shrink: 0;
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
+    line-height: normal;
+    font-style: normal;
     color: #FFFFFF;
     border-radius: 30px;
     background: #9c0332;
@@ -65,6 +76,7 @@ a {
     justify-content: center ;
     text-decoration: none ;
 }
+
 
 .games {
     padding-top: 128px;
@@ -84,6 +96,12 @@ a {
   }
   
   .game__name {
+    display: flex;
+width: 79px;
+height: 31.639px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
     position: absolute;
     left: 32px;
     bottom: 32px;
