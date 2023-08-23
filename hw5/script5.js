@@ -1,19 +1,31 @@
 
 let month = Number(prompt('Номер месяца'));
 switch (month) {
-  case 'month >=3 && month <=5':
-    console.log('Весна');
+  case 12:
+  case 1:  
+  case 2:
+    alert('Зима');
     break;
-    case 'month >=6 && month <=8':
-      console.log('Лето');
-      break;
-      case 'month >=9 && month <=11':
-      console.log('Осень');
-      break;
-      case 'month >=12 && month <=2':
-      console.log('Зима');
-      break;
 
+
+  case 3:
+  case 4:  
+  case 5:
+    alert('Весна');
+    break;
+
+  case 6:
+  case 7:  
+  case 8:
+    alert('Лето');
+    break;
+
+    case 9:
+  case 10:  
+  case 11:
+    alert('Осень');
+    break;
+  
   default:
     break;
 }
