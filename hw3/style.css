@@ -103,7 +103,6 @@ padding-top: 32px;
   
   .game__name {
     display: flex;
-width: 79px;
 height: 31.639px;
 flex-direction: column;
 justify-content: center;
@@ -128,6 +127,7 @@ flex-shrink: 0;
     background-image: url(image/game3.jpg);
   }
 
+  
 @media (max-width: 600px) {
     .center {
         padding-left: 16px;
