@@ -10,9 +10,7 @@ for (let i = 0; i <product.length; i++) {
 //Задание 2
 
 const product2 = [1, 5, 4, 10, 0, 3];
-product2.forEach((el, index) => {
-	console.log(`${index}: ${el}`);
-});
+console.log(product2.indexOf(4));
 
 
 //Задание 3
@@ -24,12 +22,18 @@ console.log(product3);
 
 //Задание 4
 
-let product4 =[
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-]
-console.log(product4);
+let arr = [1, 1, 1];
+
+for (let i = 0; i < 1; i++) {
+	arr[i] = []; 
+	
+	for (let j = 0; j < 1; j++) {
+		arr[i].push(j + 1); 
+			
+	}
+}
+
+console.log(arr);
 
 
 //Задание 5 
@@ -48,23 +52,20 @@ console.log(product6);
 
 //Задание 7
 
-let product7 = [9, 8, 7, 6, 5];
-    let p = Number(prompt('Угадай число'));
-    if (product7) {
-         alert('Угадал');
-          } else {
-            alert('Не угадал');
-    }
+const numbersArray = [9, 8, 7, 6, 5];
+const userInput = prompt('Угадайте число');
+if (numbersArray.includes(userInput)) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
         
 
 //Задание 8
+const originalString = 'abcdef';
+const reversedString = originalString.split('').reverse().join('');
 
-let product8 = ['a', 'b', 'c', 'd', 'e', 'f'];
-
-for(let a = product8.length - 1; a >= 0; a--) {
-    product8[a] = product8[a];
-    console.log(product8[a]);
-}
+console.log(reversedString); // 'fedcba'
 
 
 //Задание 9
@@ -91,20 +92,18 @@ console.log(sum);
 
 //Задание 11
 
-function taskEleven(array) {
- return array.map(number => number*number); 
-    }
- let array1 = [4, 5, 6];
- taskEleven (array1);   
+const array = [4, 5, 6];
+let result = array.map(item =>(item **2) );
+console.log(result);
 
 
 //Задание 12
 
-function taskTwelve(arrayString) {
-    return arrayString.map(word => word.length);        
-       }
-   let array2 = ['слово', 'длина', 'буква'];
-   taskTwelve (array2);
+const getLenght = source => source.map(str => str.length);
+ console.log(getLenght(['слово', 'длина', 'буква']));
+
 
    //Задание13
-   
+   function filterPositive(array) {
+    
+   }
