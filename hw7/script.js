@@ -10,12 +10,15 @@ if (answerRight.toUpperCase() === answer.toUpperCase()) {
 
 
 //Задание 2
-function searchStart(['Кошка', 'Кит', 'Кот', 'Собака'], 'ко');
-let search = 'ко';
-searchStart.forEach((search) => {
+
+
+
+const products = ['Кошка', 'Кит', 'Кот', 'Собака'];
+const search = 'ко';
+products.forEach((product) => {
 	
 	if (product.toLowerCase().includes(search.toLowerCase())) {
-		console.log(search);
+		console.log(product);
 	}
 });
 
@@ -44,9 +47,12 @@ console.log(getRandomInt(0, 10));
 
 
 //Задание 6
-function getRandomArrNumbers(); // [ 
-Math.random 
-// от 0 до 12, длина массива 12 / 2 = 6
+
+ function getRandomArrNumbers() {
+    return Math.round(Math.random()*(maxValue-minValue));
+ }
+ console.log(getRandomArrNumbers);
+
 
 
 
@@ -75,6 +81,9 @@ console.log(currentDate1);
 //Задание 10
 
 
+let currentDate2 = new Date(2023, 8, 24);
+currentDate2.setDate(currentDate1());
+console.log(currentDate2);
 
 
 //Задание 11
@@ -82,8 +91,3 @@ console.log(currentDate1);
   
 
 
-//Задание 12
-
-
-   //Задание13
-   
