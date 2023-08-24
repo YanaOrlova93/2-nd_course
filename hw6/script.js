@@ -105,5 +105,9 @@ const getLenght = source => source.map(str => str.length);
 
    //Задание13
    function filterPositive(array) {
-    
+    return array.filter(number => number < 0);
    }
+    const inputArray = [-2, 8, -5, 3, 0, -3];
+    const negativeNumbers = filterPositive(inputArray);
+    console.log(negativeNumbers);
+   
