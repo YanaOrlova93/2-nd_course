@@ -6,16 +6,15 @@ console.log(upperValue.toUpperCase());
 
 //Задание 2
 
-function search(arr, start) {
+function searchStart(arr, start) {
     const string = start.toLowerCase();
-    return arr.filter((str) => str.toLowerCase().startWith(string))
+    return arr.filter((str) => str.toLowerCase().startsWith(string))
 
 }
 
 console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
 console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
-console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); 
-
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
 
 //Задание 3
 
@@ -61,12 +60,16 @@ console.log(currentDate);
 
 //Задание 9
 
-let currentDate1 = new Date(2023, 8, 24);
-currentDate1.setDate(currentDate1() + 73);
-console.log(currentDate1);
+const currentDate1 = new Date(2023, 8, 31);
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate.toDateString());
+
 
 
 //Задание 10
+
+
+
 
 
 
