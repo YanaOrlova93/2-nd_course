@@ -33,31 +33,25 @@ alert( Math.min(52, 53, 49, 77, 21, 32)); // 21
 
 //Задание 5 
 
-function getRandomInt(minValue, maxValue) {
-    return Math.round(Math.random() * maxValue);
-}
-console.log(getRandomInt(0, 10));
+const randNum = () => Math.floor(Math.random()*10)+1;
 
 
 
 //Задание 6
-
- function getRandomArrNumbers() {
-    return Math.round(Math.random()*(maxValue-minValue));
- }
- console.log(getRandomArrNumbers);
-
-
-
+const getRandomArrNumbers = (num) => {
+  let arr = [];
+  for (let x = 0; x < Math.floor(num / 2); x++) {
+    arr.push(Math.floor(Math.random() * (num = 1)));
+  }
+  return arr;
+}
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));
 
 //Задание 7
 
-function newArray(x, y) {
-  let array = [];
-  for (let i = x; i <= y; i++) array.push(i);
- 
-  return  Math.random(array);
-}       
+const getRandomNumbersDiap = (min, max) => Math.floor(Math.random() * (max-min));
+console.log(getRandomNumbersDiap(3,40));
 
 //Задание 8
 let currentDate = new Date();
@@ -68,20 +62,16 @@ console.log(currentDate);
 //Задание 9
 
 let currentDate1 = new Date(2023, 8, 24);
-currentDate1.setDate(currentDate1() + 72);
+currentDate1.setDate(currentDate1() + 73);
 console.log(currentDate1);
 
 
 //Задание 10
 
 
-let currentDate2 = new Date(2023, 8, 24);
-currentDate2.setDate(currentDate1());
-console.log(currentDate2);
-
 
 //Задание 11
-
+//работа с макетом
   
 
 
