@@ -1,26 +1,20 @@
 //Задание 1
 
-const answerRight = prompt ('Ответ');
-const answer = 'строка';
-if (answerRight.toUpperCase() === answer.toUpperCase()) {
-    alert('Это правильный ответ');
-} else {
-    alert('Не угадал');
-}
+let upperValue = "js";
+console.log(upperValue.toUpperCase());
 
 
 //Задание 2
 
+function search(arr, start) {
+    const string = start.toLowerCase();
+    return arr.filter((str) => str.toLowerCase().startWith(string))
 
+}
 
-const products = ['Кошка', 'Кит', 'Кот', 'Собака'];
-const search = 'ко';
-products.forEach((product) => {
-	
-	if (product.toLowerCase().includes(search.toLowerCase())) {
-		console.log(product);
-	}
-});
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); 
 
 
 //Задание 3
