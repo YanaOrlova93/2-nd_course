@@ -15,20 +15,23 @@ function isPositive(filter) {
   return true;
 }
 function isMale(filter) {
-  if (filter === 'male')
+  if (filter.gender === 'male')
   return true;
+
 }
 function filter(arr, ruleFunction) {
   let output = [];
 
   for (let i = 0; i < arr.lenght; i++) {
+   if (ruleFunction(arr[i])) {
+    output.push(arr[i]);
+   }
+  }
     
-      output.push(ruleFunction(arr[i]));
-
-    }
   return output;
 }
-console.log(filter([3, -4, 1, 9]));
+
+console.log(filter([3, -4, 1, 9], isPositive));
 
 const peopleUser = [
   {name: 'Глеб', gender: 'male'},
