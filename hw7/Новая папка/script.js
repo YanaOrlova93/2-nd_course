@@ -40,7 +40,7 @@ const randNum = () => Math.floor(Math.random()*10)+1;
 const getRandomArrNumbers = (num) => {
   let arr = [];
   for (let x = 0; x < Math.floor(num / 2); x++) {
-    arr.push(Math.floor(Math.random() * (num = 1)));
+    arr.push(Math.floor(Math.random() * (num + 1)));
   }
   return arr;
 }
@@ -49,8 +49,8 @@ console.log(getRandomArrNumbers(12));
 
 //Задание 7
 
-const getRandomNumbersDiap = (min, max) => Math.floor(Math.random() * (max-min));
-console.log(getRandomNumbersDiap(3,40));
+const getRandomNumbersDiap = (min, max) => Math.floor(Math.random() * (max-min+1))+1;
+console.log(getRandomNumbersDiap(3,41));
 
 //Задание 8
 let currentDate = new Date();
@@ -67,6 +67,7 @@ console.log(currentDate.toDateString());
 
 
 //Задание 10
+
 
 
 
