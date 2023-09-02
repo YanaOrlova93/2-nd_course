@@ -10,38 +10,38 @@ console.log(people.sort((a,b) => a.age - b.age));
 
 //Задание 2
 
-function isPositive(filter) {
-  if (filter > 0)
-  return true;
-}
-function isMale(filter) {
-  if (filter.gender === 'male')
-  return true;
 
+
+function isPositive(number) {
+  return number > 0;
 }
+
+function isMale(person) {
+  return person.gender === 'male';
+}
+
 function filter(arr, ruleFunction) {
-  let output = [];
+  const result = [];
 
-  for (let i = 0; i < arr.lenght; i++) {
-   if (ruleFunction(arr[i])) {
-    output.push(arr[i]);
-   }
+  for (let i = 0; i < arr.length; i++) {
+    if (ruleFunction(arr[i])) {
+      result.push(arr[i]);
+    }
   }
-    
-  return output;
+
+  return result;
 }
 
-console.log(filter([3, -4, 1, 9], isPositive));
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
-const peopleUser = [
+const peopleUser1 = [
   {name: 'Глеб', gender: 'male'},
   {name: 'Анна', gender: 'female'},
   {name: 'Олег', gender: 'male'},
   {name: 'Оксана', gender: 'female'}
 ];
 
-console.log(filter(peopleUser, isMale));
-
+console.log(filter(peopleUser1, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 //Задание 3
 
 let myDate = new Date;
