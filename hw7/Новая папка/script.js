@@ -49,8 +49,10 @@ console.log(getRandomArrNumbers(12));
 
 //Задание 7
 
-const getRandomNumbersDiap = (min, max) => Math.floor(Math.random() * (max-min+1))+1;
-console.log(getRandomNumbersDiap(3,41));
+function getRandomNum(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandomNum(8,16));
 
 //Задание 8
 let currentDate = new Date();
