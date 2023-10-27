@@ -1,7 +1,7 @@
 
 //game1
 
-
+function Season() {
 let month = Number(prompt('Номер месяца'));
 switch (month) {
   case 12:
@@ -31,35 +31,40 @@ switch (month) {
   
   default:
     break;
+} 
 }
+Season();
 //game2
 
-function guessWord() {
-  let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-  fruits = fruits.sort(() => Math.random() - 0.5);
-  alert(fruits);
 
-  let firstElem = prompt("Чему равнялся первый элемент массива?");
-  let lastElem = prompt("Чему равнялся последний элемент массива?");
+function Fruits () {
+const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-   for (let i = 0; i < fruits.length; i++) {
-
-    if (firstElem === "" || firstElem === " " || firstElem === null) {
-      alert('Не верный первый элемент');
-  
-    } else if (lastElem === "" || lastElem === " " || lastElem === null) {
-      alert('Не верный последний элемент');
-
-    } else if (fruits[0].toUpperCase().includes(firstElem.toUpperCase()) && fruits[fruits.lenght -1].toUpperCase().includes(lastElem.toUpperCase())) {
-      alert('Поздравляю с победой!');
-
-    }else if (fruits[0].toUpperCase().includes(firstElem.toUpperCase()) || fruits[fruits.lenght -1].toUpperCase().includes(lastElem.toUpperCase())) {
-      alert('Вы были близки к победе');
-    } else {
-      alert('Не угадал');
-    } 
-    break
-   
-  }
-  
+// Функция для перемешивания массива случайным образом
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
+
+// Перемешиваем массив
+shuffleArray(fruits);
+alert (fruits);
+// Получаем ответы пользователя
+const firstGuess = prompt('Чему равнялся первый элемент массива?');
+const lastGuess = prompt('Чему равнялся последний элемент массива?');
+
+// Проверяем ответы пользователя
+if (firstGuess === fruits[0] && lastGuess === fruits[fruits.length - 1]) {
+    alert('Поздравляем! Вы угадали оба элемента.');
+} else if (
+    (firstGuess === fruits[0] && lastGuess !== fruits[fruits.length - 1]) ||
+    (firstGuess !== fruits[0] && lastGuess === fruits[fruits.length - 1])
+) {
+    alert('Вы были близки к победе!');
+} else {
+    alert('Вы ответили неверно.');
+}
+}
+Fruits ();
