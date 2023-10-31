@@ -56,11 +56,11 @@ const firstGuess = prompt('Чему равнялся первый элемент
 const lastGuess = prompt('Чему равнялся последний элемент массива?');
 
 // Проверяем ответы пользователя
-if (firstGuess === fruits[0] && lastGuess === fruits[fruits.length - 1]) {
+if (firstGuess === fruits[0].toLowerCase() && lastGuess === fruits[fruits.length - 1].toLowerCase()) {
     alert('Поздравляем! Вы угадали оба элемента.');
 } else if (
-    (firstGuess === fruits[0] && lastGuess !== fruits[fruits.length - 1]) ||
-    (firstGuess !== fruits[0] && lastGuess === fruits[fruits.length - 1])
+    (firstGuess === fruits[0].toLowerCase() && lastGuess !== fruits[fruits.length - 1].toLowerCase()) ||
+    (firstGuess !== fruits[0].toLowerCase() && lastGuess === fruits[fruits.length - 1].toLowerCase())
 ) {
     alert('Вы были близки к победе!');
 } else {
