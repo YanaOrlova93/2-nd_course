@@ -53,7 +53,7 @@ const getRandomNumbersDiap = (min, max) => Math.floor(Math.random() * (max-min))
 console.log(getRandomNumbersDiap(3,40));
 
 //Задание 8
-let currentDate = new Date();
+let currentDate3 = new Date();
 console.log(currentDate);
 
 
@@ -67,9 +67,47 @@ console.log(currentDate.toDateString());
 
 
 //Задание 10
+function formatRussianDateAndTime(date) {
+  const daysOfWeek = [
+      'воскресенье',
+      'понедельник',
+      'вторник',
+      'среда',
+      'четверг',
+      'пятница',
+      'суббота'
+  ];
 
+  const months = [
+      'января',
+      'февраля',
+      'марта',
+      'апреля',
+      'мая',
+      'июня',
+      'июля',
+      'августа',
+      'сентября',
+      'октября',
+      'ноября',
+      'декабря'
+  ];
+  const dayOfWeek = daysOfWeek[date.getDay()];
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
 
+  const formattedDate = `Дата: ${day} ${month} ${year} - это ${dayOfWeek}.`;
+  const formattedTime = `Время: ${hours}:${minutes}:${seconds}`;
 
+  return `${formattedDate}\n${formattedTime}`;
+}
+const currentDate = new Date();
+const formattedDateTime = formatRussianDateAndTime(currentDate);
+console.log(formattedDateTime);
 
 
 

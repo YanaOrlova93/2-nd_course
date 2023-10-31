@@ -50,10 +50,10 @@ function guessWord() {
     } else if (lastElem === "" || lastElem === " " || lastElem === null) {
       alert('Не верный последний элемент');
 
-    } else if (fruits[0].toUpperCase().includes(firstElem.toUpperCfse() && fruits[fruits.lenght -1]).toUpperCase().includes(lastElem.toUpperCase())) {
+    } else if (fruits[0].toUpperCase().includes(firstElem.toUpperCase() && fruits[fruits.lenght -1]).toUpperCase().includes(lastElem.toUpperCase())) {
       alert('Поздравляю с победой!');
 
-    }else if (fruits[0].toUpperCase().includes(firstElem.toUpperCfse()) || fruits[fruits.lenght -1].toUpperCase().includes(lastElem.toUpperCase())) {
+    }else if (fruits[0].toUpperCase().includes(firstElem.toUpperCase()) || fruits[fruits.lenght -1].toUpperCase().includes(lastElem.toUpperCase())) {
       alert('Не угадал');
 
     }
@@ -62,3 +62,6 @@ function guessWord() {
   }
   
 }
+
+
+
