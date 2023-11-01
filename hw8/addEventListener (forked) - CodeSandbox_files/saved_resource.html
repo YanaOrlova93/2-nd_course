@@ -1,0 +1,60 @@
+
+<!-- saved from url=(0023)https://p87qkq.csb.app/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./sse-hooks.f742b80f43c5a2e0e619b0d97b5886cd.js"></script>
+    <script type="text/javascript" src="./banner.0b5d84a2b.js"></script>
+
+    
+    <title>Урок "Управление html содержимым из js"</title>
+  </head>
+
+  <body>
+    <h1 id="add-h">Любимые цвета студентовсамые любимые цветасамые любимые цвета</h1>
+    <ul id="list">
+      <li>Глеб, любимый цвет <span style="color: #ff2600;"> #ff2600</span></li>
+      <li>Иван, любимый цвет <span style="color: #00f900;"> #00f900</span></li>
+      <li>Люси, любимый цвет <span style="color: #0432ff;"> #0432ff</span></li>
+    </ul>
+
+    <div>
+      <h3>Форма добавления</h3>
+      Имя:
+      <input type="text">
+      <br><br>
+      Цвет:
+      <input type="color">
+      <br><br>
+      <button id="add-button">Добавить</button>
+      <button id="add2-button">Добавить</button>
+    </div>
+    <br>
+    <div>
+      <h3>Форма удаления</h3>
+      <button>Удалить <span style="color: #ff2600;">#ff2600</span></button>
+    </div>
+    <script crossorigin="" type="text/javascript" src="./watermark-button.f4f9aed52.js"></script>
+  
+  <script>
+    const buttonElement = document.getElementById("add-button");
+    const listElement = document.getElementById("list");
+
+    buttonElement.addEventListener("click", () => {
+      const oldListHtml = listElement.innerHTML;
+      listElement.innerHTML =
+        oldListHtml +
+        `<li>Люси, любимый цвет <span style="color: #0432ff;"> #0432ff</span></li>`;
+    });
+
+    const headElement = document.getElementById("add-h");
+    headElement.addEventListener("click", () => {
+      alert("не стоило сюда нажимать");
+    });
+
+    const button2Element = document.getElementById("add2-button");
+    button2Element.addEventListener("click", () => {
+      const oldListHtml = headElement.innerHTML;
+      headElement.innerHTML = oldListHtml + `самые любимые цвета`;
+    });
+  </script>
+
+</body></html>
