@@ -52,8 +52,8 @@ function shuffleArray(array) {
 shuffleArray(fruits);
 alert (fruits);
 // Получаем ответы пользователя
-const firstGuess = prompt('Чему равнялся первый элемент массива?');
-const lastGuess = prompt('Чему равнялся последний элемент массива?');
+const firstGuess = prompt('Чему равнялся первый элемент массива?').toLowerCase();
+const lastGuess = prompt('Чему равнялся последний элемент массива?').toLowerCase();
 
 // Проверяем ответы пользователя
 if (firstGuess === fruits[0].toLowerCase() && lastGuess === fruits[fruits.length - 1].toLowerCase()) {
